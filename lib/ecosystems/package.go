@@ -32,7 +32,7 @@ const server = "https://packages.ecosyste.ms/api/v1"
 var Version = "dev"
 
 func getUserAgent() string {
-	return fmt.Sprintf("Parlay (%s)", Version)
+	return fmt.Sprintf("parlay (%s)", Version)
 }
 
 func GetPackageData(purl packageurl.PackageURL) (*packages.GetRegistryPackageResponse, error) {
